@@ -1,0 +1,148 @@
+/******************************************************************
+Site Name: BREW
+Author: Dan Brown
+
+Stylesheet: Global Stylesheet
+
+Styles and classes used throughout the entire BREW framework
+
+******************************************************************/
+
+body {
+  //padding-top: @navbar-height; // THIS IS IF YOU HAVE top-nav-fixed ENABLED
+  &.admin-bar .navbar-fixed-top { // THIS FIXES THE TOP NAV WHEN ADMIN BAR IS ENABLED
+  	top: 46px;
+  	@media (min-width: 783px) {
+    	top: 32px;
+ 		}
+ 	}
+}
+
+html.mm-opened {
+	body {
+		padding-top: 0; 
+	}
+}
+
+/********* MMENU Styles *********/
+
+#mobile-menu:not( .mm-menu ) {
+   display: none;
+}
+
+body, html {
+    height: 100%;
+   
+}
+
+.mmenu-body {
+	min-height: 100%;
+	position:relative;
+}
+
+div[data-bgimage] {
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-ms-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center bottom;
+}
+
+/******************************************************************
+H1, H2, H3, H4, H5 STYLES
+******************************************************************/
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+
+	a {}
+}
+
+h1, .h1 {}
+
+h2, .h2 {}
+
+h3, .h3 {}
+
+h4, .h4 {}
+
+h5, .h5 {}
+
+#content {
+	h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+
+		a {}
+	}
+}
+
+
+/*********************
+LINK STYLES
+*********************/
+
+a, a:visited {
+
+	/* on hover */
+	&:hover, &:focus {
+		text-decoration: none;
+		color: darken(@link-color, 10%);
+	}
+
+	/* on click */
+	&:active {
+		text-decoration: none;
+		color: darken(@link-color, 10%);
+	}
+
+	/* mobile tap color */
+	&:link {
+		/*
+		this highlights links on iPhones/iPads.
+		so it basically works like the :hover selector
+		for mobile devices.
+		*/
+	}
+}
+
+/*********************
+HELPERS
+*********************/
+
+
+.padding {
+	padding: 30px;
+}
+
+.padding-big {
+	padding: 50px;
+}
+
+.no-margin {
+	margin: 0px!important;
+}
+
+.no-padding {
+	padding: 0px!important;
+}
+
+
+/*********************
+OVERRIDES
+*********************/
+
+// .btn {
+//     display: inline-block;
+//     margin-bottom: 0;
+//     font-weight: normal;
+//     text-align: center;
+//     vertical-align: middle;
+//     cursor: pointer;
+//     background-image: none;
+//     border: 0px solid transparent;
+//     white-space: nowrap;
+//     padding: 10px 50px;
+//     font-size: 18px;
+//     line-height: 1.42857143;
+//     border-radius: 0px;
+//     text-transform: uppercase;
+// }

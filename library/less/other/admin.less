@@ -1,0 +1,67 @@
+/******************************************************************
+Stylesheet: Admin Stylesheet
+
+This stylesheet is loaded in admin area. This way you can style 
+the admin area.
+
+******************************************************************/
+
+body {
+
+}
+
+
+#welcome_widget, #support_widget {
+
+	.inside {
+		height: 280px
+	}
+	.welcome-panel {
+		border: 0px solid #000000;
+		padding-top: 0px;
+		-webkit-box-shadow: 0 0px 0px rgba(0,0,0,.04);
+		box-shadow: 0 0px 0px rgba(0,0,0,.04);
+		.welcome-panel-column {
+			width: 100%;
+		}
+		h4 {
+			margin: 1.33em 0 0;
+		    font-size: 16px;
+		    font-weight: 600;
+		}
+		.support {
+			h4 {
+				margin-bottom: 5px;
+				margin-top: 0px;
+			}
+			.portrait {
+				float: left;
+				width: 40%;
+				height: 140px;
+				margin-top: 30px;
+				&.martin {
+					background: url('../images/martin_jespersen.jpg') no-repeat center center;
+					background-size: cover;
+				}
+				&.michael {
+					background: url('../images/michael_moeller.jpg') no-repeat center center;
+					background-size: cover;
+				}
+			}
+			.text {
+				margin-top: 30px;
+				text-align: left;
+				float: left;
+				width: 60%;
+				padding: 10px 15px;
+				box-sizing: border-box;
+				h5 {
+					margin: 0px 0px 0px 0px;
+					line-height: 1;
+					font-size: 14px;
+				}
+				
+			}
+		}
+	}
+}

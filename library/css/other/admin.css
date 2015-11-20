@@ -1,0 +1,12 @@
+/******************************************************************
+Stylesheet: Admin Stylesheet
+
+This stylesheet is loaded in admin area. This way you can style 
+the admin area.
+
+******************************************************************/
+#welcome_widget .welcome-panel h4 {
+  margin: 1.33em 0 0;
+  font-size: 16px;
+  font-weight: 600;
+}
